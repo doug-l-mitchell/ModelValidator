@@ -18,7 +18,7 @@ public class SampleData
 }
 ```
 
-and I want to validate this object in the business layer such as this
+and I want to validate this object in the business layer...
 
 ```csharp
 public void SomeBusinessMethod(SampleData data)
@@ -29,5 +29,8 @@ public void SomeBusinessMethod(SampleData data)
 
 	if(errors.Count() > 0)
 		throw new ValidationException(errors);
+
+	...
 }
 ```
+No rocket science here but it keeps the business logic a bit cleaner.
