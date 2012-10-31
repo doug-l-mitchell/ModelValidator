@@ -31,4 +31,3 @@ public void SomeBusinessMethod(SampleData data)
 		throw new ValidationException(errors);
 }
 ```
-
